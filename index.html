@@ -1,64 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>Articles</title>
+
     <!-- Favicon -->
     <!-- <link rel="icon" href=""> -->
-
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
-    <!-- HEADER -->
-    <header class="site-header">
-      <div class="site-header__container container">
-        <!-- LOGO -->
-        <div class="site-header__logo logo">
-          <a href="#" class="logo__link">
-            <img class="logo__img" src="" alt="" width="" height="" />
-          </a>
-        </div>
-
-        <!-- SITENAV -->
-        <nav class="sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
-            </li>
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
-            </li>
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
-            </li>
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- /HEADER -->
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero__wrapper container"></div>
-      </section>
-      <!-- /HERO -->
+
+      <div class="container articles">
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero__content">
+            <h2 class="hero__heading">
+              Sayohat haqidagi eng qiziq bloglarni kuzatib boring.
+            </h2>
+            <a class="hero__link button button-primary" href="#">top bloglar</a>
+          </div>
+        </section>
+        <!-- /HERO -->
+
+        <!-- LATEST VIDEOS -->
+        <section class="latest-videos">
+          <h2 class="latest-videos__heading">Eng so’nggi videolar</h2>
+          
+          <h1 class="latest-videos__divider"></h1>
+          
+          <div class="latest-videos__cards">
+            <!-- LATEST VIDEOS ITEM -->
+            <article class="latest-videos__item article-card">
+              <img class="article-card__img" src="./images/article-poster-home.jpg" alt="Wood home" width="160" height="90" srcset="./images/article-poster-home.jpg 1x, ./images/article-poster-home@2x.jpg 2x">
+              <div class="article-card__content">
+                <h2 class="article-card__heading">
+                <a class="article-card__link" href="#">O’rmonda uchburchaksimon uy qurdik</a>
+              </h2>
+              <div class="article-card-time-view">
+                <time class="article-card__time" datetime="">1 hafta oldin</time>
+                <span class="article-card__view">873 ming</span>
+              </div>
+              </div>
+            </article>
+
+            <!-- LATEST VIDEOS ITEM -->
+          <article class="latest-videos__item article-card">
+            <img class="article-card__img" src="./images/article-poster-sibir.jpg" alt="Sea of the Siberia" width="160" height="90" srcset="./images/article-poster-sibir.jpg 1x, ./images/article-poster-sibir@2x.jpg 2x">
+            <div class="article-card__content">
+              <h2 class="article-card__heading">
+              <a class="article-card__link" href="#">Sibirliklarning qoldirib ketilgan uychalari</a>
+            </h2>
+            <div class="article-card-time-view">
+              <time class="article-card__time" datetime="">3 hafta oldin</time>
+              <span class="article-card__view">819 ming</span>
+            </div>
+            </div>
+          </article>
+
+          <!-- LATEST VIDEOS ITEM -->
+          <article class="latest-videos__item article-card">
+            <img class="article-card__img" src="./images/article-poster-trip.jpg" alt="Human and dog in the forest" width="160" height="90" srcset="./images/article-poster-trip.jpg 1x, ./images/article-poster-trip@2x.jpg 2x">
+            <div class="article-card__content">
+              <h2 class="article-card__heading">
+              <a class="article-card__link" href="#">Yer-uyida mallarang kuchugim bilan tunab qoldik</a>
+            </h2>
+            <div class="article-card-time-view">
+              <time class="article-card__time" datetime="">1 oy oldin</time>
+              <span class="article-card__view">3.9 million</span>
+            </div>
+            </div>
+          </article>
+          </div>
+          <a class="latest-videos__link" href="#">Yana yuklash</a>
+        </section>
+        <!-- /LATEST VIDEOS -->
+
+      </div>
     </main>
     <!-- /MAIN CONTENT -->
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="site-footer__container container"></div>
-    </footer>
-    <!-- /FOOTER -->
   </body>
 </html>

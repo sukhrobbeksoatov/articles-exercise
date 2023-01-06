@@ -1,0 +1,28 @@
+/* BEBAS NEUE REGULAR */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/bebas-neue-v9-latin-regular.woff2') format('woff2'),
+    url('../fonts/bebas-neue-v9-latin-regular.woff') format('woff'); 
+}
+
+/* ROBOTO CONDENSED REGULAR */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/roboto-condensed-v25-latin-regular.woff2') format('woff2'), 
+   url('../fonts/roboto-condensed-v25-latin-regular.woff') format('woff'); 
+}
+/* ROBOTO CONDENSED BOLD */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/roboto-condensed-v25-latin-700.woff2') format('woff2'), 
+   url('../fonts/roboto-condensed-v25-latin-700.woff') format('woff'); 
+}

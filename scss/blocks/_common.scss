@@ -1,4 +1,16 @@
 /* GLOBAL */
+:root {
+  --text-color: #fff;
+  --secondary-text-color: #888;
+  --heading-color: #222;
+  --link-hover-color: var(--secondary-bg-color);
+  --divider-color: var(--secondary-text-color);
+  --outline-color: var(--text-color);
+  --primary-bg-color: var(--text-color);
+  --secondary-bg-color: #1e90ff;
+  --main-font-family: "Bebas Neue", "Arial", sans-serif;
+  --secondary-font-family: "Roboto Condensed", "Arial", sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
@@ -9,6 +21,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 *::before,
@@ -16,12 +30,9 @@ html {
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
+*:focus {
+  outline: 2px dashed var(--outline-color);
+  outline-offset: 3px;
 }
 
 img {
@@ -30,11 +41,12 @@ img {
 
 body {
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: var(--main-font-family);
   font-size: 16px;
   line-height: 1.5;
-  // color: ;
-  background-color: #fff;
+  background-color: --primary-bg-color;
+  color: --secondary-text-color;
+  letter-spacing: 2px;
   display: flex;
   flex-direction: column;
 }
@@ -43,6 +55,7 @@ body {
 .container {
   width: 100%;
   max-width: $desktop;
+  height: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -90,6 +103,8 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
 
 /* RETINA DISPLAY */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
