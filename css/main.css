@@ -229,8 +229,16 @@ body {
   align-items: flex-start;
 }
 
+.article-card__img {
+  border-radius: 4px;
+  max-width: 160px;
+  max-height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .article-card__content {
-  padding: 16px 9px 10px 16px;
+  padding: 16px 9px 0 16px;
 }
 
 .article-card__heading {
